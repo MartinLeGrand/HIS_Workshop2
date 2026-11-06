@@ -24,8 +24,9 @@ public class Player_Behaviour : MonoBehaviour
     {
         if (Input.GetButtonDown("Cancel"))
         {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            Application.Quit();
+            //Cursor.lockState = CursorLockMode.None;
+            //Cursor.visible = true;
         }
         if (Input.GetButtonDown("Jump"))
         {
